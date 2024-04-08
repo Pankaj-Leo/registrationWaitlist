@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Student Name" />
+
+    <EditText
+        android:id="@+id/editTextCourseId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextStudentName"
+        android:layout_margin="16dp"
+        android:hint="Course ID" />
+
+    <Spinner
+        android:id="@+id/spinnerYearOfStudy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCourseId"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/buttonSaveStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerYearOfStudy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Update"
+        android:textColor="@android:color/white"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp" />
+
+</RelativeLayout>
